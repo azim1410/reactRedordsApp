@@ -13,7 +13,7 @@ app.use((req, res, next) =>{
 
 app.use('/api/workout' , workoutRoute)
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(mongodb+srv://azimadamani:azimadamani.01@cluster0.3dlb3tk.mongodb.net/?retryWrites=true&w=majority)
     .then( () => {
         app.listen(process.env.PORT, ()=>{
             console.log("on port ", process.env.PORT)
